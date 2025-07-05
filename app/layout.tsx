@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/common/header";
 import Footer from "@/components/common/footer";
 import { ClerkProvider } from "@clerk/nextjs";
+import { Toaster } from "@/components/ui/sonner";
+
 
 const fontSans = FontSans({
   variable: "--font-sans",
@@ -34,7 +36,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
-
+<Toaster/>
       </body>
     </html>
     </ClerkProvider>
